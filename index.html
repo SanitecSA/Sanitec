@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Sanitarios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tienda de Sanitarios</h1>
+    <p>Todo para tu baño y cocina</p>
+  </header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <section id="inicio">
+    <h2>Bienvenido a nuestra tienda</h2>
+    <p>Ofrecemos sanitarios de alta calidad a precios competitivos.</p>
+  </section>
+  <section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/inodoro.jpg" alt="Inodoro moderno" />
+        <h3>Inodoro moderno</h3>
+        <p>$150</p>
+        <button class="btn">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/lavamanos.jpg" alt="Lavamanos de cerámica" />
+        <h3>Lavamanos de cerámica</h3>
+        <p>$80</p>
+        <button class="btn">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/grifo.jpg" alt="Grifo elegante" />
+        <h3>Grifo elegante</h3>
+        <p>$45</p>
+        <button class="btn">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una empresa dedicada a la venta de sanitarios desde hace más de 10 años.</p>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Tienda de Sanitarios. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
